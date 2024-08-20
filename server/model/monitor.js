@@ -1482,9 +1482,9 @@ class Monitor extends BeanModel {
         if (this.interval > MAX_INTERVAL_SECOND) {
             throw new Error(`Interval cannot be more than ${MAX_INTERVAL_SECOND} seconds`);
         }
-        if (this.interval < MIN_INTERVAL_SECOND) {
+        /*if (this.interval < MIN_INTERVAL_SECOND) {
             throw new Error(`Interval cannot be less than ${MIN_INTERVAL_SECOND} seconds`);
-        }
+        }*/
     }
 
     /**
