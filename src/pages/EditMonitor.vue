@@ -512,7 +512,7 @@
                             <!-- Interval -->
                             <div class="my-3">
                                 <label for="interval" class="form-label">{{ $t("Heartbeat Interval") }} ({{ $t("checkEverySecond", [ monitor.interval ]) }})</label>
-                                <input id="interval" v-model="monitor.interval" type="number" class="form-control" required :min="minInterval" step="1" :max="maxInterval" @blur="finishUpdateInterval">
+                                <input id="interval" v-model="monitor.interval" type="number" class="form-control" required :min="1" step="1" :max="maxInterval" @blur="finishUpdateInterval">
                             </div>
 
                             <div class="my-3">
@@ -528,7 +528,7 @@
                                     {{ $t("Heartbeat Retry Interval") }}
                                     <span>({{ $t("retryCheckEverySecond", [ monitor.retryInterval ]) }})</span>
                                 </label>
-                                <input id="retry-interval" v-model="monitor.retryInterval" type="number" class="form-control" required :min="minInterval" step="1">
+                                <input id="retry-interval" v-model="monitor.retryInterval" type="number" class="form-control" required :min="1" step="1">
                             </div>
 
                             <!-- Timeout: HTTP / Keyword / SNMP only -->
